@@ -1,29 +1,23 @@
 {
-  "name": "News",
+  "name": "News2",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/csierra325/News.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/csierra325/News/issues"
-  },
-  "homepage": "https://github.com/csierra325/News#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.3",
+    "axios": "^0.18.0",
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.1",
+    "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
-    "mongoose": "^5.2.7",
-    "morgan": "^1.9.0",
-    "request": "^2.88.0"
+    "mongoose": "^4.10.6",
+    "morgan": "^1.7.0",
+    "request": "^2.81.0"
   }
 }
