@@ -10,7 +10,7 @@ var cheerio = require("cheerio");
 
 var db = require("./modules");
 
-var PORT = 3000;
+var PORT =  process.env.PORT || 3000;
 
 
 var app = express();
@@ -24,7 +24,12 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/news");
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/news";
+mongoose.Promise =Promise;
+mongoose.connect(MONGODB_URI);
+
+
+
 
 // Routes
 
